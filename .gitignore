@@ -1,0 +1,13 @@
+#idea compile folder
+out/*
+
+#maven compile and package folder
+target/*
+
+#idea project file and folder
+.idea/*
+*.iml
+
+*.war
+*.ear
+*.jar
