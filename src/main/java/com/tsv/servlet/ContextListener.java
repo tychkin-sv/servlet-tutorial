@@ -28,6 +28,7 @@ public class ContextListener implements ServletContextListener {
         user = Utils.createStubUser(3, "Violetta Tychkina", 10);
         this.users.put(user.getId(), user);
         System.out.println("contextInitialized : users.size = " + this.users.size());
+        servletContext.setAttribute("users", users);
     }
 
     @Override

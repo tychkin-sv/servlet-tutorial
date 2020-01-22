@@ -33,7 +33,8 @@ public class GetIndexPageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("doGet is work!");
-        req.setAttribute("users", users);
+        System.out.println("users.size = " + this.users.size());
+        req.setAttribute("users", this.users.values());
         req.getRequestDispatcher(index).forward(req, resp);
     }
 
