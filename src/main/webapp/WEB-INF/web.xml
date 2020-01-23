@@ -71,4 +71,27 @@
         <servlet-name>JsonFormServlet</servlet-name>
         <servlet-class>com.tsv.servlet.JsonFormServlet</servlet-class>
     </servlet>
+
+    <!--Encoding filter UTF-8 for all requests-->
+    <filter>
+        <filter-name>EncodingRequestFilter</filter-name>
+        <filter-class>com.tsv.servlet.EncodingRequestFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>EncodingRequestFilter</filter-name>
+        <url-pattern>/</url-pattern>
+    </filter-mapping>
+
+
+    <!--Encoding filter UTF-8 for all requests-->
+    <filter>
+        <filter-name>EncodingResponseFilter</filter-name>
+        <filter-class>com.tsv.servlet.EncodingResponseFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>EncodingResponseFilter</filter-name>
+        <url-pattern>/</url-pattern>
+    </filter-mapping>
 </web-app>
