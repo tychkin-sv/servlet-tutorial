@@ -50,5 +50,25 @@
         <servlet-class>com.tsv.servlet.UpdateUserServlet</servlet-class>
     </servlet>
 
+    <!--Json handler-->
+    <servlet-mapping>
+        <servlet-name>JsonHandlerServlet</servlet-name>
+        <url-pattern>/json_data</url-pattern>
+    </servlet-mapping>
 
+    <servlet>
+        <servlet-name>JsonHandlerServlet</servlet-name>
+        <servlet-class>com.tsv.servlet.JsonHandlerServlet</servlet-class>
+    </servlet>
+
+    <!--Json handler-->
+    <servlet-mapping>
+        <servlet-name>JsonFormServlet</servlet-name>
+        <url-pattern>/json</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>JsonFormServlet</servlet-name>
+        <servlet-class>com.tsv.servlet.JsonFormServlet</servlet-class>
+    </servlet>
 </web-app>

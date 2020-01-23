@@ -1,5 +1,8 @@
 package com.tsv.model;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonPropertyOrder({ "id", "name", "age"})
 public class User {
 
     private String name;
